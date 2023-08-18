@@ -29,7 +29,7 @@ const CustomMenu = ({ title, state, filters, setState }: Props) => {
               src="/arrow-down.svg"
               width={10}
               height={5}
-              alt="Arrow down"
+              alt="arrow down"
             />
           </Menu.Button>
         </div>

@@ -1,9 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
+
 import { NavLinks } from '@/constants';
-import AuthProviders from './AuthProviders';
 import { getCurrentUser } from '@/lib/session';
-import { signOut } from 'next-auth/react';
+
+import AuthProviders from './AuthProviders';
+import Button from './Button';
 import ProfileMenu from './ProfileMenu';
 
 const Navbar = async () => {
@@ -15,16 +17,16 @@ const Navbar = async () => {
         <Link href="/">
           <Image
             src="/logo.svg"
-            width={115}
+            width={116}
             height={43}
-            alt="Flexibble"
+            alt="logo"
           />
         </Link>
         <ul className="xl:flex hidden text-small gap-7">
           {NavLinks.map((link) => (
             <Link
               href={link.href}
-              key={link.key}
+              key={link.text}
             >
               {link.text}
             </Link>
@@ -37,7 +39,9 @@ const Navbar = async () => {
           <>
             <ProfileMenu session={session} />
 
-            <Link href="/create-project">Share Work</Link>
+            <Link href="/create-project">
+              <Button title="Share work" />
+            </Link>
           </>
         ) : (
           <AuthProviders />

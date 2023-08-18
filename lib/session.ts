@@ -4,8 +4,9 @@ import { AdapterUser } from 'next-auth/adapters';
 import GoogleProvider from 'next-auth/providers/google';
 import jsonwebtoken from 'jsonwebtoken';
 import { JWT } from 'next-auth/jwt';
-import { SessionInterface, UserProfile } from '@/common.types';
+
 import { createUser, getUser } from './actions';
+import { SessionInterface, UserProfile } from '@/common.types';
 
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -34,7 +35,7 @@ export const authOptions: NextAuthOptions = {
   },
   theme: {
     colorScheme: 'light',
-    logo: '/logo.png',
+    logo: '/logo.svg',
   },
   callbacks: {
     async session({ session }) {
@@ -43,7 +44,6 @@ export const authOptions: NextAuthOptions = {
       try {
         const data = (await getUser(email)) as { user?: UserProfile };
 
-        // If user exists, merge user data into the existing session
         const newSession = {
           ...session,
           user: {
@@ -65,9 +65,10 @@ export const authOptions: NextAuthOptions = {
         if (!userExists.user) {
           await createUser(user.name as string, user.email as string, user.image as string);
         }
+
         return true;
-      } catch (error) {
-        console.log(error);
+      } catch (error: any) {
+        console.log('Error checking if user exists: ', error.message);
         return false;
       }
     },
