@@ -13,8 +13,6 @@ type Props = {
   userId: string;
 };
 
-// https://youtu.be/986hztrfaSQ?t=12068
-
 const ProjectCard = ({ id, image, title, name, avatarUrl, userId }: Props) => {
   const [randomLikes, setRandomLikes] = useState(0);
   const [randomViews, setRandomViews] = useState('');
