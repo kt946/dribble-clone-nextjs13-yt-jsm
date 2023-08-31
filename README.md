@@ -1,3 +1,7 @@
+# Dribble Clone Next.js
+
+![dribble-clone-screenshot](https://github.com/kt946/dribble-clone-nextjs13-yt-jsm/assets/103476893/24c69342-e22d-44d6-9149-b0cbcc556c2e "Dribble Clone homepage screenshot")
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
