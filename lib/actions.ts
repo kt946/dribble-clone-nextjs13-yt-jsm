@@ -9,6 +9,7 @@ import {
   getProjectsOfUserQuery,
   getUserQuery,
   projectsQuery,
+  projectsQueryAll,
 } from '@/graphql';
 import { ProjectForm } from '@/common.types';
 
@@ -50,11 +51,13 @@ const makeGraphQLRequest = async (query: string, variables = {}) => {
   }
 };
 
-export const fetchAllProjects = (category?: string | null, endcursor?: string | null) => {
-  client.setHeader('x-api-key', apiKey);
+export const fetchAllProjects = (category?: string | null | undefined, endcursor?: string) => {
+  client.setHeader("x-api-key", apiKey);
 
-  return makeGraphQLRequest(projectsQuery, { category, endcursor });
-};
+  if (!category || category === undefined || category === "All") return makeGraphQLRequest(projectsQueryAll, { endcursor });
+  
+  else return makeGraphQLRequest(projectsQuery, { category, endcursor });
+}
 
 export const createNewProject = async (form: ProjectForm, creatorId: string, token: string) => {
   const imageUrl = await uploadImage(form.image);
