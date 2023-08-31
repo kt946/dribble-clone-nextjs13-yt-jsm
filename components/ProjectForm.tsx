@@ -148,7 +148,7 @@ const ProjectForm = ({ type, session, project }: Props) => {
       <CustomMenu
         title="Category"
         state={form.category}
-        filters={categoryFilters}
+        filters={categoryFilters.filter(category => category !== 'All')}
         setState={(value) => handleStateChange('category', value)}
       />
 
