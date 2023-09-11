@@ -1,4 +1,6 @@
-# Dribbble Clone with Next.js, NextAuth.js, Tailwind CSS, Cloudinary, TypeScript
+# Dribbble Clone with Next.js, NextAuth.js, Tailwind CSS, Grafbase, TypeScript
+
+![homepage_screenshot](https://github.com/kt946/dribble-clone-nextjs13-yt-jsm/assets/103476893/c31bcb65-567f-40fa-b2bf-065d6ece291f, 'Homepage Screenshot')
 
 ## Description
 
@@ -60,7 +62,7 @@ npm run dev
 
 This project includes the following features:
 
-- User registration and authentication using Next Auth
+- User registration and authentication using NextAuth
 - Project upload with images, titles, and descriptions
 - Developer profile pages with project portfolios
 - Project category sorting and filtering
@@ -68,6 +70,12 @@ This project includes the following features:
 - Responsive and visually appealing UI using Tailwind CSS and HeadlessUI
 
 ## Screenshots
+
+![create_project_screenshot](https://github.com/kt946/dribble-clone-nextjs13-yt-jsm/assets/103476893/cece11a7-dfc9-4cc2-91be-b765e42837d4, 'Create Project Form Screenshot')
+
+![project_details_screenshot](https://github.com/kt946/dribble-clone-nextjs13-yt-jsm/assets/103476893/314f0450-0924-435e-9f04-0f26d2433b71, 'Project Details Screenshot')
+
+![profile_screenshot](https://github.com/kt946/dribble-clone-nextjs13-yt-jsm/assets/103476893/b0113fa2-8967-4b7f-978d-9420d4fd6ffd, 'Profile Screenshot')
 
 ## Technologies Used
 
