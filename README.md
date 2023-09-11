@@ -1,38 +1,101 @@
-# Dribble Clone Next.js
+# Dribbble Clone with Next.js, NextAuth.js, Tailwind CSS, Cloudinary, TypeScript
 
-![dribble-clone-screenshot](https://github.com/kt946/dribble-clone-nextjs13-yt-jsm/assets/103476893/24c69342-e22d-44d6-9149-b0cbcc556c2e "Dribble Clone homepage screenshot")
+## Description
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This project is a Dribbble-inspired platform that allows developers to showcase their projects and connect with the developer community. It was built using a YouTube tutorial by [JavaScript Mastery](https://www.youtube.com/watch?v=MJzmZ9qmdaE).
 
-## Getting Started
+Welcome to the Full Stack Dribbble Clone! Developed with Next.js, Next Auth, Tailwind CSS, Cloudinary, TypeScript, JWT, GraphQL, Grafbase, and HeadlessUI, this project offers a dynamic and visually captivating experience for developers. Users can sign in with their email, upload project details, including images, titles, and descriptions, explore other developers' profiles, and easily sort through projects by category. With secure authentication, responsive design, and GraphQL-powered data retrieval, this application encapsulates the core elements of a modern developer portfolio and collaboration platform.
 
-First, run the development server:
+⭐ Note: The database may become inactive if the app is not used for a while. If this happens, please contact me and I will reactivate the database.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+## Table of Contents
+
+- [Installation](#installation)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [Links](#links)
+- [License](#license)
+
+## Installation
+
+1. To get started, clone the repository or download the zip file.
+2. Install the dependencies by running the following command in the terminal:
+
+```
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Create a .env file in the root directory and add the following environment variables:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+NEXT_PUBLIC_GRAFBASE_API_URL
+NEXT_PUBLIC_GRAFBASE_API_KEY
+GOOGLE_CLIENT_ID
+GOOGLE_CLIENT_SECRET
+NEXTAUTH_URL
+CLOUDINARY_NAME
+CLOUDINARY_KEY
+CLOUDINARY_SECRET
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+5. Create a .env file in the grafbase directory and add the following environment variables:
 
-## Learn More
+```
+NEXTAUTH_SECRET
+```
 
-To learn more about Next.js, take a look at the following resources:
+6. Run the development server by running the following command in the terminal:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+7. Open [http://localhost:3000](http://localhost:3000) with your browser to see the project.
 
-## Deploy on Vercel
+⭐ Note: The project may require some additional configuration to run properly. Please refer to the youtube tutorial for more information.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project includes the following features:
+
+- User registration and authentication using Next Auth
+- Project upload with images, titles, and descriptions
+- Developer profile pages with project portfolios
+- Project category sorting and filtering
+- GraphQL-powered data retrieval for efficient querying
+- Responsive and visually appealing UI using Tailwind CSS and HeadlessUI
+
+## Screenshots
+
+## Technologies Used
+
+- [Next.js](https://nextjs.org/)
+- [NextAuth.js](https://next-auth.js.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [JWT (JSON Web Tokens)](https://jwt.io/)
+- [GraphQL](https://graphql.org/)
+- [Grafbase](https://www.graphbase.io/)
+- [Cloudinary](https://cloudinary.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [HeadlessUI](https://headlessui.dev/)
+- [Vercel](https://vercel.com/)
+
+## Contributing
+
+If you'd like to contribute to this project, please fork the repository and submit a pull request.
+
+## Links
+
+- [Link to deployed application](https://dribble-clone-nextjs13-yt-jsm.vercel.app/)
+
+- [Link to GitHub repository](https://github.com/kt946/dribble-clone-nextjs13-yt-jsm)
+
+- [Link to original GitHub repository by JavaScript Mastery](https://github.com/adrianhajdin/project_nextjs13_flexibble)
+
+- [Link to youtube tutorial by JavaScript Mastery](https://www.youtube.com/watch?v=986hztrfaSQ)
+
+## License
+
+This project is licensed under the MIT License.
