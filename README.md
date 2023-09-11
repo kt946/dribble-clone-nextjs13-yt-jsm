@@ -42,19 +42,19 @@ CLOUDINARY_KEY
 CLOUDINARY_SECRET
 ```
 
-5. Create a .env file in the grafbase directory and add the following environment variables:
+4. Create a .env file in the grafbase directory and add the following environment variables:
 
 ```
 NEXTAUTH_SECRET
 ```
 
-6. Run the development server by running the following command in the terminal:
+5. Run the development server by running the following command in the terminal:
 
 ```
 npm run dev
 ```
 
-7. Open [http://localhost:3000](http://localhost:3000) with your browser to see the project.
+6. Open [http://localhost:3000](http://localhost:3000) with your browser to see the project.
 
 ⭐ Note: The project may require some additional configuration to run properly. Please refer to the youtube tutorial for more information.
 
